@@ -1,0 +1,8 @@
+.top-nav{
+	background: linear-gradient(#70cf70 10%,#8aea8a 25%);
+    padding: 10px;
+    font-family: arial;
+    color: white;
+    box-shadow: 0px 0px 10px #979595;
+    text-align: center;
+}
