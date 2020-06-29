@@ -6,7 +6,8 @@
 	<div class = "sidebar">
 		<p class = "title"><b><span>CSS</span><br/> Art Course</b></p>
 		<ul>
-			<li><a href="#course-info">Course Info</a></li>
+			<li><a href="#course-info-questions">Course Info Questions</a></li>
+			<li><a href="#basic-course-info">Basic Course Information</a></li>
 			<li><a href="#reading-video-background-info">Reading, video, and background information</a>
 				<ul>
 					<li><a href="#course-orientation">Course Orientation Page</a></li>
@@ -26,7 +27,7 @@
 
 	<p>Your name: Gabriela Johnson</p>
 
-	<h1>Course Info Questions</h1>
+	<h1 id="course-info-questions">Course Info Questions</h1>
 	<p class = "prompt">Who is this course for? (10 points)</p>
 	<p class = "prompt">Identify the learner(s) in your course. Describe them in detail. What should they know coming into this course? Identify any prerequisites.</p>
 
@@ -38,7 +39,7 @@
 
 	<p class = "prompt">Demographics: ages, geographic location, employment status, etc. Are they required to take this course or is it something fun to do in their free time?</p> 
 
-	<p>The learner should be above the age of 12 and have the suggested prerequisites to take this course.  This course does not need for the user to be living in a specific location or have a specific emplyment status.  This course can be taken for fun to learn about how to create CSS animations and bring fun ideas to life through the web, as well as to assist in enhancing their existing skills in creating websites.</p>
+	<p>The learner should be above the age of 12 and have the suggested prerequisites to take this course.  This course does not need the user to be living in a specific location or have a specific employment status.  This course can be taken for fun to learn about how to create CSS animations and bring fun ideas to life through the web, as well as to assist in enhancing their existing skills in creating websites.</p>
 
 	<p class = "prompt">What are your learner's goals for taking this course?</p>
 	<p>The learner’s goals are to expand their knowledge of CSS to create compelling and moving graphics.  They can use this course to pursue a career in frontend web development, or just for their own personal gain.  For example if they have a hobby in creating CSS art, or would like to make other web projects for themselves.</p>
@@ -46,7 +47,7 @@
 	<p class = "prompt">What are your goals? (10 points)</p>
 	<p class = "prompt">What are your goals in teaching this material? These may be overt, like course objectives, or covert, like gaining technological confidence.</p>
 	<p>I would like for my learner to be able to come away with new skills in CSS they didn’t have before.  When my learner has an idea for an art piece or experience they would like to create, I hope this course provides them with the skills they need to make it happen.</p>
-	<p>I am very passionate about CSS art and creating interactive and compelling web experiences for people.  I believe creating a course and explaining what I already know will solidify my knowledge and confidence in this material.  I believe I will learn even more.</p>
+	<p>I am very passionate about CSS art and creating interactive and compelling web experiences for people.  I believe creating a course and explaining what I already know will solidify my knowledge and confidence in this material.  I believe I will learn even more about this topic since I will have to research all of the details necessary to be confident in creating CSS gradients and animation.</p>
 
 	<p class = "prompt">What should learners remember 2-3 years after taking your course?</p>
 	<p>If the learners do not remember the syntax to create CSS gradients or animations, I hope they remember conceptually how CSS can be used to affect webpages.  They should be able to remember the positive impact gradients and animation can have on a composition or webpage.</p>
@@ -58,10 +59,10 @@
 	
 	<ul>
 		<li>Be able to explain and know how to create linear, radial, conic and repeating gradients and apply that to an HTML element.</li>
-		<li>Know, understand and use all of the background properties that affect gradients such as background-size, background-repeat etc.</li>
-		<li>Be able to apply not just one gradient to an HTML element, but multiple layered ones.</li>
-		<li>Know, explain and use all of the animation properties such as animation-name,animation-direction, animation-iteration-count etc..</li>
-		<li>Be able to use all of the transform properties of CSS on an element, such as translate, rotate, skew, etc.</li>
+		<li>Know, understand and use the background properties background-size, background-position and background-repeat.</li>
+		<li>Be able to apply not just one gradient to an HTML element, but layered gradients as well.</li>
+		<li>Know how to create a keyframe animation and apply it to an HTML element.</li>
+		<li>Be able to use all of the transform properties of CSS on an element, such as translate, rotate, scale and skew.</li>
 		<li>Be able to create a web page using multiple gradients and animations on multiple elements.</li>
 	</ul> 
 
@@ -69,30 +70,37 @@
 
  
  	<h1 id="basic-course-info">Basic Course information</h1>
-	<p class = "prompt">A title</p>
-	<h1 id="course">Creating Art with CSS</h1>
-	<p class = "prompt">A description (usually around 1 paragraph)</p>
-	<h3>Description</h3>
-	<p>This course will teach you the endless possibilities of CSS.  We will focus on CSS gradients first, followed by CSS Animations.  Gradients and animation add dimension and life to a web page that can take it from medicore to professional.  This course will show you how to create compelling art and web experiences using only CSS.</p>
+	<div class="border">
+		<p class = "prompt">A title</p>
+		<h2>Creating Art with CSS</h2>
+		<p class = "prompt">A description (usually around 1 paragraph)</p>
+		<h3>Description</h3>
+		<p>This course will teach you the endless possibilities of CSS.  We will focus on CSS gradients first, followed by CSS Animations.  Gradients and animation add dimension and life to a web page that can take it from medicore to professional.  This course will show you how to create compelling art and web experiences using only CSS.  Both of these topics are quite large in scope, so we will just be focusing on the core principles that will help you get started.</p>
 
-	<p class = "prompt">List any prerequisite courses or prior learning required</p>
-	<b>Prerequisites</b>
-	<ul>
-		<li>Knowledge of HTML and CSS (html tags, flexbox, colors, border-radius)</li>
-		<li>Account on Codepen,  you will be using this to create and save your project
-Course Objectives</li>
-	</ul>
+		<p class = "prompt">List any prerequisite courses or prior learning required</p>
+		<b>Prerequisites</b>
+		<ul>
+			<li>Knowledge of HTML and CSS (HTML tags, flexbox, colors, CSS properties)</li>
+			<li>Account on Codepen,  you will be using this to create and save your exercises and project.</li>
+		</ul>
 
-	<p class = "prompt">Identify what the learner will learn. This may be in the form of course objectives, or bullets describing what will happen in the course.</p>
- 
+		<p class = "prompt">Identify what the learner will learn. This may be in the form of course objectives, or bullets describing what will happen in the course.</p>
+		<p>The learner will learn how to:</p>
+	 	<ul>
+	 		<li>Create linear, radial, conic and repeating gradients and apply that to an HTML element.</li>
+			<li>Use the the background properties background-size, background-position and background-repeat.</li>
+			<li>Be able to layer gradients onto an HTML element</li>
+			<li>Know how to create a keyframe animation and apply it to an HTML element.</li>
+			<li>Be able to use all of the transform properties of CSS on an element, such as translate, rotate, scale and skew.</li>
+	 	</ul>
 
- 	<p class = "prompt">A brief biography, describing your qualifications for teaching the material.</p>
-	<b>Biography</b>
-	<p>I'm an Interactive Multimedia major with a minor in Computer Science from The College of New Jersey. I’ve been coding for about 4 years now and specialize in CSS art. I have experience designing and maintaining websites for insurance industry clients and affinity groups. I employ a collaborative approach to the creative design process.I love creating interactive web experiences for users and telling a story.</p>
+	 	<p class = "prompt">A brief biography, describing your qualifications for teaching the material.</p>
+		<b>Biography</b>
+		<p>I'm an Interactive Multimedia major with a minor in Computer Science from The College of New Jersey. I’ve been coding for about 4 years now and specialize in CSS art. I have experience designing and maintaining websites for restaurants, science labs and other businesses and have done so for over 2 years now. I love creating interactive web experiences for users and telling a story.</p>
 
-	<p class = "prompt">A photo of yourself.</p>
-	<img src = "images/me.JPG" style="height:150px;width:auto;"/>
-
+		<p class = "prompt">A photo of yourself.</p>
+		<img src = "images/me.JPG" style="height:150px;width:auto;"/>
+	</div>
 
 <p class = "prompt">Reading, video, and background information</p>
 
@@ -100,6 +108,7 @@ Course Objectives</li>
 
 <p class = "prompt">An announcement or course orientation page, explaining what learners should be working on this week.</p>
 
+<div class="border">
 <h2 id = "course-orientation">Course Orientation Page</h2>
 
 <div>
@@ -110,10 +119,12 @@ Course Objectives</li>
 	<ol>
 		<li>2 gradient exercises</li>
 		<li>2 animation exercises</li>
+		<li>View the CSS Animation video</li>
 		<li>Complete the quiz</li>
 		<li>Complete the gradient prompt from the graded discussion</li>
 		<li>Review the final assignment and submit your proposal to the class discussion for feedback</li>
 	</ol>
+</div>
 </div>
 
 <ul>
@@ -123,20 +134,22 @@ Course Objectives</li>
 	<li class = "prompt">At least 3 links to external sources (web pages, PDFs, Google documents, book listings, etc.)</li>
 </ul>
 
+<h1>Creating Art with CSS</h1>
+
+<p>We will begin learning about CSS gradients and all of the different types available for use.  We will then proceed to learn about CSS Animation and all of its possibilities.  Play around with the provided examples and make sure you complete all of the exercises at the end of the section.</p>
 
 	<h3 id="css-gradients">CSS Gradients</h3>
  
 	<p><b>Types of Gradients</b></p>
-	<p>In CSS we can use gradients to add dimension and character to our webpage.  There are 4 types of CSS gradients:</p>
+	<p>In CSS we can use gradients to add dimension and character to our webpage.  There are 3 types of CSS gradients:</p>
 	
 	<ul>
 		<li>Linear gradients</li>
 		<li>Radial gradients</li>
 		<li>Conic Gradients</li>
-		<li>Repeating Gradients (Repeating Linear, Repeating Radial)</li>
 	</ul>
 
-	<p>You can apply gradients to the background of any HTML element.  The basic code to apply a gradient to a div for example, would be:</p>
+	<p>You can apply gradients to the background of any HTML element that is visible on the screen.  The basic code to apply a gradient to a div for example, would be:</p>
 
 	<code><pre>
 			
@@ -151,7 +164,7 @@ Course Objectives</li>
 
 <h4><b>Linear Gradients</b></h4>
 
-<p>At its most basic, linear gradients display at least 2 colors blending into each other.  However, you can control the position of the colors, and the direction that the gradient goes in. This helps add dimension to HTML elements, and can be used to draw attention to certain elements versus others on the page.</p>
+<p>At its most basic, linear gradients display at least 2 colors blending into each other.  However, you can control the position of the colors, and the direction that the gradient goes in. This helps add dimension to HTML elements, and can be used to draw attention to certain elements versus others on the web page.</p>
 
 <p>The basic format for a linear-gradient is:</p>
 
@@ -159,23 +172,31 @@ Course Objectives</li>
 
 <p><i>Direction</i></p>
 
-<p>We can control the direction the gradient is going in by giving it a degree in the first spot of the parentheses like so.  The degrees you can use range from 0-360deg, and is designated in this format below.</p>
+<p>We can control the direction the gradient is going in by giving it a degree value in the first spot of the gradient function.  The degrees you can use range from 0-360deg, and is designated in this format below.</p>
 
-<code>linear-gradient(<i>number</i>deg,red,yellow);</code>
+<p><code>linear-gradient(<i>number</i>deg,red,yellow);</code></p>
 
 <p>Examples</p>
 
-<code>linear-gradient(20deg,red,yellow);</code>
+<p><code>linear-gradient(20deg,red,yellow);</code></p>
 
-<code>linear-gradient(180deg,red,yellow);</code>
+<img src="images/lg-20-red-yellow.png" style="height:120px;width:auto;">
+
+<p><code>linear-gradient(180deg,red,yellow);</code></p>
+
+<img src="images/lg-180-red-yellow.png" style="height:120px;width:auto;">
 
 <p>You can also explicitly write where you want the direction of the gradient to go.  If you would like the end of the gradient to flow to the top right of your HTML element, you would write for it to go "to top right".</p>
 
-<code>linear-gradient(to top right, red, yellow)</code>
+<p><code>linear-gradient(to top right, red, yellow);</code></p>
+
+<img src="images/lg-top-right-red-yellow.png" style="height:120px;width:auto;">
 
 <p>If you would like the gradient to flow straight to the bottom, you would tell it to go "to bottom"</p>
 
-<code>linear-gradient(to bottom, red, yellow)</code>
+<p><code>linear-gradient(to bottom, red, yellow);</code></p>
+
+<img src="images/lg-tobottom-red-yellow.png" style="height:120px;width:auto;">
 
 
 <p><i>Position</i></p>
@@ -185,9 +206,13 @@ Course Objectives</li>
 <code>linear-gradient(red 10%, yellow 90%);</code>
 
 <p>With one color starting at 10%, and the neighboring color starting at 90%, there will be a good amount of blending between the 2 colors.  However, the closer these percents are to each other, the more minimal the blending, and the line between the two colors becomes sharper.  For example, look at the difference between<br/>
- <code>linear-gradient(red 10%, yellow 90%);</code>
+ <code>
+ linear-gradient(red 10%, yellow 90%);
+</code>
  <br/> and <br/>
- <code>linear-gradient(red 40%, yellow 60%);</code>
+ <code>
+ linear-gradient(red 40%, yellow 60%);
+</code>
 
 <img src = "images/blurry_vs_firm_line_gradients.png"/>
 
@@ -204,6 +229,17 @@ Course Objectives</li>
 <p class="codepen" data-height="417" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="yLebRjZ" style="height: 417px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Linear Gradients">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/yLebRjZ">
   Linear Gradients</a> by Gabriela Johnson (<a href="https://codepen.io/gabrielajohnson">@gabrielajohnson</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p><i>Repeating Linear Gradients</i></p>
+
+<p>You can also create a <i>repeating-linear-gradient</i>.  By putting numbers next to each color in a repeating-linear-gradient, the gradient will repeat until the end of the element.  The close the numbers are together, the smaller the gradient and the more it will repeat.  Th opposite is true if the numbers are farther apart, please view the example below.</p>
+ 
+ <p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="rNxGOrN" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="repeating-linear-gradient">
+  <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/rNxGOrN">
+  repeating-linear-gradient</a> by Gabriela Johnson (<a href="https://codepen.io/gabrielajohnson">@gabrielajohnson</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
@@ -236,8 +272,12 @@ Course Objectives</li>
 
 <p>Format:</p>
 
-<code>radial-gradient(x y, color, color)</code>
-<code>radial-gradient(shape at x y, color, color)</code>
+<code>
+radial-gradient(x y, color, color);
+</code>
+<code>
+radial-gradient(shape at x y, color, color);
+</code>
 
 <p class="codepen" data-height="410" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="mdVMagZ" style="height: 410px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Radila Gradients - closest to farthest side">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/mdVMagZ">
@@ -262,8 +302,23 @@ Course Objectives</li>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+<p><i>Repeating Radial Gradients</i></p>
+
+<p>You can also create a <i>repeating-radial-gradient</i>. This works the same as a repeating linear gradient, where you can use numbers next to the colors to control the amount of times the gradient rings repeat. If the numbers are close together, the rings will be smaller and repeat more. If they are far apart, the rings will be bigger and repeat less.</p>
+
+<p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="BajwovP" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="repeating-radial-gradient">
+  <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/BajwovP">
+  repeating-radial-gradient</a> by Gabriela Johnson (<a href="https://codepen.io/gabrielajohnson">@gabrielajohnson</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 
 <p><b>Conic Gradients</b></p>
+
+<img src = "images/conic_gradients.png"/>
+
+<p>Conic gradients displays your chosen colors around an origin point, this is particularily useful for creating pie charts.</p>
 
 <p>Using conic gradients you can move the <i>origin of the gradient</i>, and how far the colors extend using <i>deg, grad, turn and rad</i>. When extending the gradients, instead of using a percentage for each color like in a linear gradient, you will use 2 numbers to denote the start and end of the color in the gradient.  You can view this example in "Conic gradient, determining range of colors" below.  The range of degrees available for use range from 0-360, around the origin of the conic gradient.  However, for the first and last color, you can just use 1 number to denote the range.  This is because the degrees used in the color after the first color, and the degrees used in the color before the last color, complete the range.  Here are the other code formats below.</p>
 
@@ -303,30 +358,51 @@ Course Objectives</li>
 </div>
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/conic-gradient">  For more information on Conic Gradients, please visit this link</a>
-
-<p><b>Repeating Gradients</b></p>
  
- 
-<p><b>Gradient Properties</b>
+<p><b>Background Properties</b>
 
-<p><b>Degrees</b></p>
-
-<p>radial-gradient(ellipse,top left)</p>
+<p>Background properties are helpful in creating even more creative and interesting compositions.  We won't go too in depth in this course, but you can view examples of their use below.</p>
 
 <ul>
-	<li>background-color</li>
-	<li>background-image</li>
-	<li>background-position</li>
-	<li>background-size</li>
-	<li>background-repeat</li>
-	<li>background-origin</li>
-	<li>background-clip</li>
-	<li>background-attachment</li>
+	<li>background-color: The color used for the background of the HTML element.</li>
+	<li>background-image: The image used for the background of the HTML element.</li>
+	<li>background-position: Controls the position of the background within the element.</li>
+	<li>background-size: Controls the size of the background in the element, usually used to determine if the background should cover the entirety or only a portion of the whole area.</li>
+	<li>background-repeat: Controls if the background repeats horizontally, vertically, both or not at all.  The properties used for this are <i>repeat-x,repeat-y,repeat,no-repeat</i></li>
+	<li>background-origin: Controls whether the background image starts from the upper left corner of the padding box, border-box, content-box</li>
+	<li>background-clip: Controls how far the background will extend within the HTML element.</li>
+	<li>background-attachment:  Controls if the background will or will not scroll with the page.</li>
 </ul>
 
-<p>Layering Gradients</p>
+<p>For more information and examples of the use of background properties, please go to this <a href="https://www.w3schools.com/cssref/css3_pr_background.asp">page</a></p>
+
+<p>The properties <i>background-position</i>, <i>background-size</i> and <i>background-repeat</i> can be particularly useful in implementing drastic changes to a background.  Please view the example below of these properties in use.</p>
+
+<p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="NWxaxjQ" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Background properties">
+  <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/NWxaxjQ">
+  Background properties</a> by Gabriela Johnson (<a href="https://codepen.io/gabrielajohnson">@gabrielajohnson</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p><b>Layering Gradients</b></p>
+
+<p>As you probably saw in the example above, the 4th div uses 2 gradients and the background properties to create its T shape effect.  Layering Gradients are incredibly useful, and really open up the possibilites for your future webpages.</p>
+
+<p>Here is the code format:</p>
+
+<code>background: gradient-type(color,color), gradient-type(color,color), gradient-type(color,color);</code>
+
+<p>As you can see, every gradient is separated by a comma.</p>
+
+<p>Here are 3 things you should take away from layering gradients:</p>
+<ul>
+	<li>The first gradient in the list is the one on top</li>
+	<li>You can layer any gradient type on top of each other</li>
+	<li>Use transparent colors in top gradients so you can see the gradients underneath.</li>
+</ul>
  
-<p>Ex. 1
+<p>Please view the example below and observe how the background properties affect the gradients.</p>
  
 <p class="codepen" data-height="363" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="KKVvJvX" style="height: 363px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Layering Gradients">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/KKVvJvX">
@@ -335,27 +411,35 @@ Course Objectives</li>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+<p><b>CSS Gradient Exercises</b></p>
+
+<p>1. Apply a linear, radial or conic gradient to an HTML element.  Use at least 3 colors, and use percentages or pixels to change the position of the colors.</p>
+
+<p>2. Layer at least 2 gradients onto an HTML element.  Use either background-size, background-position or background-repeat to further change the gradient.</p>
+
+
 
 <h3 id="css-animation">CSS Animation</h3>
 
 <p>CSS Animations are a great way to add pizazz to any site.  There are several animatable properties that you can find listed in the link below.  You can change the background, text color, border radius and more.  You can also move, rotate and change the shape of the element itself.</p>
 
-<p>Please view the video below for a quick intro in CSS Animation</p>
+<p>Please view the video below for a quick intro into CSS Animation</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HZHHBwzmJLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target="_blank">Animatable CSS properties List</a>
+<p><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target="_blank">Animatable CSS properties List</a></p>
 
-<p>CSS Animation format</p>
-<p><b>How to apply it to element</b></p>
+<p>CSS Animation Format</p>
 
 <p>Below is the basic code format to apply an animation to an element.  For the animation property, you can set the name of the animation first, then the duration of the animation in seconds.
 
+<div class="code">
 	<code>
+
 		div{
 			width:200px;
 			height:200px;
-			animation: changeColor 2s;
+			animation: changeColor 4s;
 		}
 
 		@keyframes changeColor {
@@ -365,7 +449,61 @@ Course Objectives</li>
 
 
 	</code>
+</div>
+
+<p>As you can see, the keyframe animation is split up into two frames that occur at 0% and 100%. Since the animation duration is 4s, that means that the frame at 0% will play right when the animation starts, and the frame at 100% will play at the end of the animation.  You can add as many frames as you want using percentages. Here are some more examples below.</p>
+
+<div class="code">
+	<code>
+
+		div{
+			width:200px;
+			height:200px;
+			animation: changeColor 4s;
+		}
+
+		@keyframes changeColor {
+			0%   {
+				background-color: red;
+			}25%{ <b>#1 second mark</b>
+				background-color: yellow;
+			}75%{ <b>#3 second mark</b>
+				background-color: blue;
+			}100% {
+				background-color: green;
+			}
+		}
+
+	</code>
+</div>
+
+<div class="code">
+<code>
+
+	div{
+		width:200px;
+		height:200px;
+		animation: changeColor 9s;
+	}
+
+	@keyframes changeColor {
+		0%   {
+			background-color: red;
+		}33%{ <b>#3 second mark</b>
+			background-color: yellow;
+		}66%{ <b>#6 second mark</b>
+			background-color: yellow;
+		}100% {
+			background-color: green;
+		}
+	}
+
+</code>
+</div>
+
 <p><b>Animation properties</b></p>
+
+<p>You can use these properties below to control the timing, length and other aspects of your animation.  You would place these properties inside the CSS of the element you are animating.</p>
 
 <ul>
 	<li><b>animation-name:</b> The name of the animation.</li>
@@ -373,7 +511,7 @@ Course Objectives</li>
 	<li><b>animation-delay:</b> How many seconds pass before the animation starts.</li>
 	<li><b>animation-iteration-count:</b> How many times the animation plays.</li>
 	<li><b>animation-direction:</b> Determines whether the animation plays forwards, in reverse, alternate(forwards then backwards) or alternate-reverse(backwards then forwards).</li>
-	<li><b>animation-timing-function:</b> Determines the speed curve the animation plays at.</li>
+	<li><b>animation-timing-function:</b> Determines the speed curve the animation plays at.
 		<p>There are several of these properties:</p>
 		<ul>
 			<li>ease - (Default setting) Animation begins slowly, quickens, then ends slowly.</li>	
@@ -385,10 +523,8 @@ Course Objectives</li>
 		</ul>
 
 		<p>Other properties include <i>step-start</i>, <i>step-end</i>, and <i>steps(n,n)</i>, but we will not be using them in this course.</p>
-
-
-		</ul>
-		<li>animation-fill-mode: Determines what the element will look like before and after the animation.</li>
+		</li>
+		<li><b>animation-fill-mode:</b> Determines what the element will look like before and after the animation.</li>
 		<ul>
 			<li>Forwards: The element will keep the stylings from the end of the animation.</li>
 			<li>Backwards: The element will keep the stylings from the beginning of the animation.</li>
@@ -396,15 +532,12 @@ Course Objectives</li>
 		</ul>
 
 	<li><b>animation:</b> Instead of writing out all properties individually, you can use this property as a shorthand.  The properties would go in this order: <br/>
-		animation: <i>name duration timing-function delay iteration-count direction fill-mode play-state;</i></li>
+		<code>animation: <i>name duration timing-function delay iteration-count direction fill-mode play-state;</i></code></li>
 </ul>
 
-<p>Animation</p>
-<p>CSS transform</p>
+<p><b>CSS Transform</b></p>
 
-<p>All Transform Values</p>
-
-<p>Transforming elements allows you to move, rotate, change size and the visual look of the element.  Here are the 5 different transform properties below</p>
+<p>Transforming elements allows you to move, rotate, change size and the visual look of the element.  Here are the 5 different transform properties below.</p>
 
 <ul>
 	<li>translate</li>
@@ -412,6 +545,9 @@ Course Objectives</li>
 	<li>scale</li>
 	<li>skew</li>
 </ul>
+
+
+<p><b>Note.</b> In all of the examples below, I will also be animating the background-color and border-radius of some of the elements so you can also be exposed to other animatable properties and how they work.</p>
 
 <p><b>Translate</b></p>
 
@@ -435,6 +571,8 @@ Course Objectives</li>
 	<p>If you apply <code>translateZ(100px)</code> to the element, it will now move forward 100px towards the user, becoming bigger along the provided 600px perspective length.</p>
 </div>
 
+<p>Please click "rerun" view the example below.</p>
+
 
 <p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="NWxggqO" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Translate">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/NWxggqO">
@@ -445,7 +583,7 @@ Course Objectives</li>
 
 <p><b>Rotate</b></p>
 
-<p>The rotate function can rotate the element along the x, y and z plane.</p>
+<p>The rotate function can rotate the element along the x, y and z plane.  Please click "rerun" view the example below.</p>
 
 <p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="ExPvraR" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ExPvraR">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/ExPvraR">
@@ -456,13 +594,13 @@ Course Objectives</li>
 
 <p><b>Scale</b></p>
 
-<p>Instead if decreasing the size of the shapes by percentages, we use numbers.  If you were to scale a number scale(1), the element would stay the same size.  If you wrote scale(2), the element would double in size by their width and height.  Similairly, if you used -1 or -2 to denote the size, the scale would be the same, but the element would reverse itself. The format for all 3 scale functions are below</p>
+<p>Instead of decreasing the size of the shapes by percentages like we use in other functions, we use numbers.  If you were to scale an element using scale(1), the element would stay the same size.  If you wrote scale(2), the element would double in size by its width and height.  Similarly, if you used -1 or -2 to denote the size, the scale would be the same, but the element would reverse itself. The format for all 3 scale functions are below.</p>
 
 <code>scaleX(x)</code>
 <code>scaleY(y)</code>
 <code>scale(x,y)</code>
 
-<p>Please view the examples below in action</p>
+<p>Please view the examples of scale in action below:</p>
 
 <p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="QWyMYjd" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Scale">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/QWyMYjd">
@@ -473,7 +611,7 @@ Course Objectives</li>
 
 <p><b>Skew</b></p>
 
-<p>The skew function skews the html element by its x and y values. You can use the number measurements <i>deg, turn and, rad to manipulate the skew.</p>
+<p>The skew function skews the html element by its x and y values. You can use the number measurements <i>deg, turn and, rad to manipulate the skew.  Please view an example of how to use skew below.</p>
 
 <p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="mdVMvrd" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Skew">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/mdVMvrd">
@@ -482,12 +620,33 @@ Course Objectives</li>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-<ul>
 
-	<li>Exercises: transform something once and multiple times</li>
-	<li>stacking elements</li>
-	<li>Exercise:simple coin example, using z-index</li>
-</ul>
+<p><b>Multiple Changes in an Animation</b></p>
+
+<p>You don't have to perform each transform property one at a time, you can actually put all of these 4 properties above on the same line.  View the example below to see a div translate and rotate at the same time.</p>
+
+<p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="BajwKbR" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Multiple transforms">
+  <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/BajwKbR">
+  Multiple transforms</a> by Gabriela Johnson (<a href="https://codepen.io/gabrielajohnson">@gabrielajohnson</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p><b>Animation Exercises</b></p>
+
+<p>1. Create a codepen where you animate a circle, you should use one of the 4 transform properties above to animate the circle.</p>
+
+<p>2. Create a codepen where you animate 2 squares, you should use one of the 4 transform properties above to animate the squares.  For the animation, make sure you use at least 2 transform properties in a line of code like so.</p>
+
+<code>
+
+@keyframes MoveAndTurn{
+	100%{
+		transform: translateX(10px) rotateZ(20deg);	
+	}
+}
+</code>
+
 
 <p class = "prompt">TIP: Look at a course listing in the Summer School catalog to get a sense of what I'm expecting in this section.</p>
  
@@ -508,32 +667,53 @@ Course Objectives</li>
 
  
 <h1 class = "prompt" id = "assessment">Assessment</h1>
-<p class = "prompt">At least 10 quiz questions, including at least one of each of the following question types.  Give answers as well:</p>
+<p class = "prompt">At least 10 quiz questions, including at least one of each of the following question types.</p>
 <ul>
 	<li class = "prompt">Multiple choice answer</li>
-		<li>1. What CSS property do you use, to make a translateZ animation visible to the user?</li>
-		<ul>
-			<li>width</li>
-			<li>perspective</li>
-			<li>background</li>
-			<li>height</li>
-		</ul>
-		<li>2. An animation's duration is set to 4s, the keyframe animation has frames at 10%, 25%, 75%, and 100%, at what second does the frame at 75% execute?</li>
-		<ul>
-			<li>A. 1s</li>
-			<li>B. 1.2s</li>
-			<li>C. 3s</li>
-			<li>D. 2.5s</li>
-			<li>Answer: C. 3s</li>
-		</ul>
+		<li>1. What CSS property do you use, to make a translateZ animation visible to the user?
+			<ul>
+				<li>width</li>
+				<li>perspective</li>
+				<li>background</li>
+				<li>height</li>
+				<li><b>Answer: B. Perspective</b></li>
+			</ul>
+		</li>
+		<li>2. An animation's duration is set to 4s, the keyframe animation has frames at 10%, 25%, 75%, and 100%, at what second does the frame at 75% execute?
+			<ul>
+				<li>A. 1s</li>
+				<li>B. 1.2s</li>
+				<li>C. 3s</li>
+				<li>D. 2.5s</li>
+				<li><b>Answer: C. 3s</b></li>
+			</ul>
+		</li>
+		<li>3. Which gradient doesn't have support in all browsers?
+			<ul>
+				<li>A. linear-gradient</li>
+				<li>B. radial-gradient</li>
+				<li>C. conic-gradient</li>
+				<li>D. repeating-radial-gradient</li>
+				<li><b>Answer: C. conic-gradient</b></li>
+			</ul>
+		</li>
+		<li>4. Which gradient doesn't have an origin property?
+			<ul>
+				<li>A. linear-gradient</li>
+				<li>B. radial-gradient</li>
+				<li>C. conic-gradient</li>
+				<li>D. repeating-radial-gradient</li>
+				<li><b>Answer: A. linear-gradient</b></li>
+			</ul>
+		</li>
 	<li class = "prompt">True/false answer</li>
 		<ul>
-			<li>3. The property animation-fill-mode will only change the background style of an element.</li>
-			<li>Answer: False</li>
+			<li>5. The property animation-fill-mode will only change the background style of an element.</li>
+			<li><b>Answer: False</b></li>
 		</ul>
 	<li class = "prompt">Matching answer</li>
 
-		<li>4. Choose which property matches with its definition</li>
+		<li>6. Choose which property matches with its definition</li>
 		<div style="display:flex;">
 			<ul>
 				<li>ease</li>	
@@ -543,32 +723,56 @@ Course Objectives</li>
 				<li>ease-in-out</li>
 			</ul> 
 			<ul>
-				<li>ease - (Default setting) Animation begins slowly, quickens, then ends slowly.</li>	
-				<li>linear - Same speed throughout.</li>	
-				<li>ease-in - Slow beginning</li>
-				<li>ease-out - Slow end</li>	
-				<li>ease-in-out - Slow beginning and end</li>
+				<li>(Default setting) Animation begins slowly, quickens, then ends slowly.</li>	
+				<li>Same speed throughout.</li>	
+				<li>Slow beginning</li>
+				<li>Slow end</li>	
+				<li>Slow beginning and end</li>
 			</ul> 	
 		</div>
 
 	<li>Fill in the blank (short) answer (typically a word or two)</li>
-	<p>5. To make a CSS animation last forever, set _________ to infinite.</p>
-	<p>Answer: animation-iteration-count</p>
+	<p>7. To make a CSS animation last forever, set the CSS property _________ to infinite.</p>
+	<p><b>Answer: animation-iteration-count</b></p>
 	<li class = "prompt">Write a longer answer (typically a paragraph or more)</li>
+	<p>8. Write a paragraph explaining the properties background-size, background-position and background-repeat.  Then explain how you would use one or more of these properties to create this gradient below.</p>
+
+	<img src="images/longer_quiz_answer_gradient.png" style="height:200px;width:auto;">
+
+	<p><i>Hint. Create the gradient first, a good place to start is to figure out what type of gradient is being used in the screenshot.  Then, what do you need to do to make them the size they are?  What else do you need to do from there?  The colors being used are gold and yellow.</i></p>
+
+	<p><b>Answer:The background-position property controls the position of the background within the element. The background-size property controls the size of the background in the element. It is usually used to determine if the background should cover the entirety or only a portion of the whole area. The background-repeat property controls if the background repeats horizontally, vertically, both or not at all.  The properties used for this are epeat-x,repeat-y,repeat,no-repeat.</b></p>
+
+	<p><b>To create this gradient, I first create a conic gradient using the colors yellow and gold.  Next, since there are only 2 of the gradients in a row, I set the background-size to 50% 50%.  Now, I want to move the gradient down vertically so only half of the gradient is available on the top and bottom.  To do this I set the background-position to 0px 50%;</b></p>
+
+	<p><p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="pogWyjP" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Longer Quiz Answer">
+  <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/pogWyjP">
+  Longer Quiz Answer</a> by Gabriela Johnson (<a href="https://codepen.io/gabrielajohnson">@gabrielajohnson</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script></p>
+	
+
 
 	<li class = "prompt">Consider 1-2 multiple choice questions applying to the video.</li>
-		<li>6. What does an animation always have at least two of?</li>
+		<li>9. What does an animation always have at least two of?
 			<ul>
-				<li>A starting state amd end state</li>
-
+				<li>A. State</li>
+				<li>B. An HTML element</li>
+				<li>C. A timing function</li>
+				<li>D. A translate property</li>
+				<li><b>Answer: A. State</b></li>
 			</ul>
-		<li>7. What would you use to create a custom easing function?</li>
+		</li>
+		<li>10. What would you use to create a custom easing function?
 			<ul>
-				<li>custom-bezier</li>
-				<li>cubic-bezier</li>
-				<li>custom-speed</li>
-				<li>ease-in-out</li>
+				<li>A. custom-bezier</li>
+				<li>B. cubic-bezier</li>
+				<li>C. custom-speed</li>
+				<li>D. ease-in-out</li>
+				<li><b>Answer: B. cubic-bezier</b></li>
 			</ul>
+		</li>
 </ul>
 
 
@@ -580,7 +784,8 @@ Course Objectives</li>
  
 <p>Use at least 5 gradients:</p>
 <ul>
-	<li>1 must be a repeating gradient</li>
+	<li>1 must be a linear-gradient</li>
+	<li>1 must be a radial-gradient</li>
 	<li>1 must be multiple layering gradients</li>
 </ul>
 <p>Use at least 2 keyframe animations:</p>
@@ -597,9 +802,6 @@ Course Objectives</li>
     }
 }
 </pre></code>
-    
- 
-<p class = "prompt">A grading scheme for the course, weighting the assignments (i.e. 30% for the quiz, 10% for the discussion, 60% for the assignment) Feel free to include more criteria for grading other than the discussion, quiz, and assignment.</p>
 
 <h3>Grading Scheme</h3>
 
@@ -610,15 +812,41 @@ Course Objectives</li>
 	</thead>
 	<tbody>
 		<tr>
-			<td>Exercises</td>
+			<td>Idea And Execution - 10 points for creativity of idea and artistic style.  The focus of the composition is easily understood and identifable.</td>
 			<td>10%</td>
 		</tr>
 		<tr>
-			<td>Discussion</td>
+			<td>Animation - 20 points for each animation used correctly, 5 points will be taken off for incorrect use.</td>
+			<td>40%</td>
+		</tr>
+		<tr>
+			<td>Gradients - 10 points for each gradient used correctly, 2.5 points will be taken off for incorrect use.</td>
+			<td>50%</td>
+		</tr>
+	</tbody>
+</table>
+    
+ 
+<p class = "prompt">A grading scheme for the course, weighting the assignments (i.e. 30% for the quiz, 10% for the discussion, 60% for the assignment) Feel free to include more criteria for grading other than the discussion, quiz, and assignment.</p>
+
+<h3>Course Grading Scheme</h3>
+
+<table>
+	<thead>
+		<th>Section</th>
+		<th>Weight</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Exercises - The 2 gradient exercises and 2 animation exercises</td>
+			<td>10%</td>
+		</tr>
+		<tr>
+			<td>Discussion - Completion of required discussion participation</td>
 			<td>20%</td>
 		</tr>
 		<tr>
-			<td>Quiz</td>
+			<td>Quiz - Completion of Quiz and Longer Answer Prompt(Gradient explanation and execution)</td>
 			<td>30%</td>
 		</tr>
 		<tr>
