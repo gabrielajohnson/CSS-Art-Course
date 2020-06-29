@@ -136,20 +136,20 @@
 
 <h1 id = "course">Creating Art with CSS</h1>
 
-<p>We will begin learning about CSS gradients and all of the different types available for use.  We will then proceed to learn about CSS Animation and all of its possibilities.  Play around with the provided examples and make sure you complete all of the exercises at the end of the section.</p>
+<p>We will begin learning about CSS gradients and all of the different types available for use.  We will then proceed to learn about CSS Animation and how we can use that to manipulate HTML elements.  Play around with the provided examples and make sure you complete all of the exercises at the end of the section.</p>
 
 	<h3 id="css-gradients">CSS Gradients</h3>
  
 	<p><b>Types of Gradients</b></p>
-	<p>In CSS we can use gradients to add dimension and character to our webpage.  There are 3 types of CSS gradients:</p>
+	<p>In CSS we can use gradients to add color and dimension to our HTML elements.  There are 3 types of CSS gradients:</p>
 	
 	<ul>
 		<li>Linear gradients</li>
 		<li>Radial gradients</li>
-		<li>Conic Gradients</li>
+		<li>Conic gradients</li>
 	</ul>
 
-	<p>You can apply gradients to the background of any HTML element that is visible on the screen.  The basic code to apply a gradient to a div for example, would be:</p>
+	<p>You can apply gradients to the background of any HTML element that is visible on the screen.  The basic CSS to apply a gradient to a div for example, would be:</p>
 
 	<code><pre>
 			
@@ -158,13 +158,13 @@
 		div{
 			width:300px;
 			height:300px;
-			background: gradient-type(color,color);
+			<b>background: gradient-type(color,color);</b>
 		}
 	</pre></code>
 
 <h4><b>Linear Gradients</b></h4>
 
-<p>At its most basic, linear gradients display at least 2 colors blending into each other.  However, you can control the position of the colors, and the direction that the gradient goes in. This helps add dimension to HTML elements, and can be used to draw attention to certain elements versus others on the web page.</p>
+<p>At its most basic, linear gradients display at least 2 colors blending into each other.  However, you can control the position of the colors, and the direction that the gradient goes in. This can be used to give a 3D effect or pattern to HTML elements, and can draw attention to certain elements versus others on the web page.</p>
 
 <p>The basic format for a linear-gradient is:</p>
 
@@ -201,11 +201,11 @@
 
 <p><i>Position</i></p>
 
-<p>In gradients, sometimes we want the first color to start at 10% of the element, and for the second color to start at 90% of the element.  By writing percents next to the color, we can do exactly that.</p>
+<p>In gradients, sometimes we don't want to have the colors evenly spread out across the HTML element. We might want one color to start at the top of the element, but the rest of the colors to start much farther from the first color. By writing percents next to each color, we can position our colors to do go where we please.</p>
 
 <code>linear-gradient(red 10%, yellow 90%);</code>
 
-<p>With one color starting at 10%, and the neighboring color starting at 90%, there will be a good amount of blending between the 2 colors.  However, the closer these percents are to each other, the more minimal the blending, and the line between the two colors becomes sharper.  For example, look at the difference between<br/>
+<p>An important thing to note is the level of blending that occurs between colors at different ranges.  With one color starting at 10%, and the neighboring color starting at 90%, there will be a good amount of blending between the 2 colors.  However, the closer these numbers are to each other, the more minimal the blending, and the line between the two colors becomes sharper.  For example, look at the difference between<br/>
  <code>
  linear-gradient(red 10%, yellow 90%);
 </code>
@@ -224,7 +224,7 @@
 
 <p>We can also use pixels instead of percents. For example, if we wanted to create the same gradient effect above, we could do <code>background:linear-gradient(red 120px, yellow 135px, blue 270px);</code>  Since the square is 300px long, 120px is 40% of the div, 135px is 45% of the div, and so on.
 
-<p>Here are some examples of gradients using the basic, direction and position attributes.</p>
+<p>Here are some examples of gradients using the basic format, as well as the direction and position attributes.</p>
 
 <p class="codepen" data-height="417" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="yLebRjZ" style="height: 417px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Linear Gradients">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/yLebRjZ">
@@ -235,7 +235,7 @@
 
 <p><i>Repeating Linear Gradients</i></p>
 
-<p>You can also create a <i>repeating-linear-gradient</i>.  By putting numbers next to each color in a repeating-linear-gradient, the gradient will repeat until the end of the element.  The close the numbers are together, the smaller the gradient and the more it will repeat.  Th opposite is true if the numbers are farther apart, please view the example below.</p>
+<p>You can also create a <i>repeating-linear-gradient</i>.  By putting numbers next to each color in a repeating-linear-gradient, the gradient will repeat until the end of the element.  The closer the numbers are together, the smaller the gradient and the more it will repeat.  The opposite is true if the numbers are farther apart, please view the example below.</p>
  
  <p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="rNxGOrN" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="repeating-linear-gradient">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/rNxGOrN">
@@ -246,7 +246,7 @@
 
 <p><b>Radial Gradients</b></p>
 
-<p>The radial gradient has its colors expanding from its origin in a circle pattern.  The origin by default is the center of the HTML element, but the user can also change the position of the origin.</p>
+<p>The radial gradient has its colors expanding from its origin in a circle or ellipse pattern.  The origin by default is the center of the HTML element, but the user can also change the position of the origin.</p>
 
 <img src = "images/radial_gradients.png"/>
 
@@ -256,7 +256,7 @@
 
 <p><b>Size</b></p>
 
-<p>The user can control the size of the gradient circle by using these 4 keywords below, or pixels or percentages: 
+<p>You can control the size of the gradient circle by using these 4 attributes below:</p>
 	<ul>
 		<li>closest-side</li>
 		<li>closest-corner</li>
@@ -264,11 +264,18 @@
 		<li>farthest-corner</li>
 	</ul>
 
-<p>View the codepen below to view the differences.  For full explanations of these properties, view this page <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient">Radial gradients</a></p>
+
+<p>View the codepen below to view the differences.  For full explanations of these properties, view this page <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient">Radial Gradients</a>.</p>
+
+<p class="codepen" data-height="410" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="mdVMagZ" style="height: 410px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Radila Gradients - closest to farthest side">
+  <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/mdVMagZ">
+  Radila Gradients - closest to farthest side</a> by Gabriela Johnson (<a href="https://codepen.io/gabrielajohnson">@gabrielajohnson</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 
 <p><b>Origin</b></p>
 
-<p>The origin of a radial gradient can be distinguished as a circle or an ellipse, followed by its location in the HTML element.  This location can be distinguished by descriptive words such as "center", shown below, or by percentages indicating x and y values.</p>
+<p>The origin of a radial gradient can be changed by first setting the gradient shape as a circle or an ellipse, followed by its location in the HTML element.  This location can also be distinguished by descriptive words such as "center", shown below, or by percentages indicating x and y values.</p>
 
 <p>Format:</p>
 
@@ -279,11 +286,6 @@ radial-gradient(x y, color, color);
 radial-gradient(shape at x y, color, color);
 </code>
 
-<p class="codepen" data-height="410" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="mdVMagZ" style="height: 410px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Radila Gradients - closest to farthest side">
-  <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/mdVMagZ">
-  Radila Gradients - closest to farthest side</a> by Gabriela Johnson (<a href="https://codepen.io/gabrielajohnson">@gabrielajohnson</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 <p>Examples</p>
@@ -304,7 +306,7 @@ radial-gradient(shape at x y, color, color);
 
 <p><i>Repeating Radial Gradients</i></p>
 
-<p>You can also create a <i>repeating-radial-gradient</i>. This works the same as a repeating linear gradient, where you can use numbers next to the colors to control the amount of times the gradient rings repeat. If the numbers are close together, the rings will be smaller and repeat more. If they are far apart, the rings will be bigger and repeat less.</p>
+<p>You can also create a <i>repeating-radial-gradient</i>. This works the same as a repeating linear gradient, where you can use numbers next to the colors to control the amount of times the gradient rings repeat. If the numbers are close together, the rings will be smaller and repeat more. If they are far apart, the rings will be larger and repeat less.</p>
 
 <p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="BajwovP" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="repeating-radial-gradient">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/BajwovP">
@@ -318,9 +320,9 @@ radial-gradient(shape at x y, color, color);
 
 <img src = "images/conic_gradients.png"/>
 
-<p>Conic gradients displays your chosen colors around an origin point, this is particularily useful for creating pie charts.</p>
+<p>Conic gradients display your chosen colors around an origin point, this is particularily useful for creating pie charts.</p>
 
-<p>Using conic gradients you can move the <i>origin of the gradient</i>, and how far the colors extend using <i>deg, grad, turn and rad</i>. When extending the gradients, instead of using a percentage for each color like in a linear gradient, you will use 2 numbers to denote the start and end of the color in the gradient.  You can view this example in "Conic gradient, determining range of colors" below.  The range of degrees available for use range from 0-360, around the origin of the conic gradient.  However, for the first and last color, you can just use 1 number to denote the range.  This is because the degrees used in the color after the first color, and the degrees used in the color before the last color, complete the range.  Here are the other code formats below.</p>
+<p>To customize a conic gradient you can move the <i>origin of the gradient</i>, and how far the colors extend using <i>deg, grad, turn and rad</i>. When extending the gradients, instead of using a percentage for each color like in a linear gradient, you will use 2 numbers to denote the start and end of the color in the gradient.  You can view this example in "<i>Determining Color Range</i>" below.  The range of degrees available for use range from 0-360, around the origin of the conic gradient.  However, for the first and last color, you can just use 1 number to denote the range.  This is because the degrees used in the color after the first color, and the degrees used in the color before the last color, complete the range for that color.  Here are the other code formats below.</p>
 
 <p><b>Standard Conic Gradient</b></p>
 
@@ -328,21 +330,21 @@ radial-gradient(shape at x y, color, color);
 
 <p>Examples</p>
 
-<p><b>Conic gradient, determining range of colors</b></p>
+<p><b>Determining Color Range</b></p>
 
-<p><code>conic-gradient(color start end,color start end);</code></p>
+<p><code>conic-gradient(color start end, color start end);</code></p>
 
 <p>Examples</p>
 <ul>
-	<li>conic-gradient(red 20deg 30deg,color 30deg 100deg);</li>
-	<li>conic-gradient(yellow 90deg, violet 0.75turn 1.0turn, green 300grad);</li>
+	<li><code>conic-gradient(red 20deg 30deg, blue 30deg 100deg);</code></li>
+	<li><code>conic-gradient(yellow 90deg, violet 0.75turn 1.0turn, green 300grad);</code></li>
 </ul>
 
-<p><b>Conic-gradient, changing the origin</b></p>
+<p><b>Changing the Origin</b></p>
 
 <ul>
-	<li>conic-gradient(from 0.75turn at 20% 70%, blue, green, purple);</li>
-	<li>conic-gradient(from 0deg at 25% 50%,red 10rad, orange 30deg, yellow);</li>
+	<li><code>conic-gradient(from 0.75turn at 20% 70%, blue, green, purple);</code></li>
+	<li><code>conic-gradient(from 0deg at 25% 50%,red 10rad, orange 30deg, yellow);</code></li>
 </ul>
 
 <p class="codepen" data-height="402" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="XWXaxLQ" style="height: 402px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Conic Gradients">
@@ -361,16 +363,16 @@ radial-gradient(shape at x y, color, color);
  
 <p><b>Background Properties</b>
 
-<p>Background properties are helpful in creating even more creative and interesting compositions.  We won't go too in depth in this course, but you can view examples of their use below.</p>
+<p>Now that we have reviewed gradients, let us move on to background properties. Background properties are helpful in creating even more creative and interesting compositions.  We won't go too in depth into each property in this course, but we will focus on the position, size, and repeat properties.</p>
 
 <ul>
 	<li>background-color: The color used for the background of the HTML element.</li>
 	<li>background-image: The image used for the background of the HTML element.</li>
 	<li>background-position: Controls the position of the background within the element.</li>
-	<li>background-size: Controls the size of the background in the element, usually used to determine if the background should cover the entirety or only a portion of the whole area.</li>
+	<li>background-size: Controls the size of the background in the element, usually used to determine if the background should cover the entirety or only a portion of the HTML element.</li>
 	<li>background-repeat: Controls if the background repeats horizontally, vertically, both or not at all.  The properties used for this are <i>repeat-x,repeat-y,repeat,no-repeat</i></li>
-	<li>background-origin: Controls whether the background image starts from the upper left corner of the padding box, border-box, content-box</li>
-	<li>background-clip: Controls how far the background will extend within the HTML element.</li>
+	<li>background-origin: Controls whether the background image starts from the upper left corner of the padding box, border-box, or content-box</li>
+	<li>background-clip: Controls how far the background will extend within or beyond the edge of the HTML element.</li>
 	<li>background-attachment:  Controls if the background will or will not scroll with the page.</li>
 </ul>
 
@@ -387,9 +389,9 @@ radial-gradient(shape at x y, color, color);
 
 <p><b>Layering Gradients</b></p>
 
-<p>As you probably saw in the example above, the 4th div uses 2 gradients and the background properties to create its T shape effect.  Layering Gradients are incredibly useful, and really open up the possibilites for your future webpages.</p>
+<p>As you probably saw in the example above, the 4th div uses 2 gradients and background properties to create its T shape effect.  Layering Gradients are incredibly useful, and really open up the possibilites for designing your future webpages.</p>
 
-<p>Here is the code format:</p>
+<p>Here is the code format for layering gradients:</p>
 
 <code>background: gradient-type(color,color), gradient-type(color,color), gradient-type(color,color);</code>
 
@@ -399,7 +401,7 @@ radial-gradient(shape at x y, color, color);
 <ul>
 	<li>The first gradient in the list is the one on top</li>
 	<li>You can layer any gradient type on top of each other</li>
-	<li>Use transparent colors in top gradients so you can see the gradients underneath.</li>
+	<li>Use transparent of less opaque colors in top gradients so you can see the gradients underneath.</li>
 </ul>
  
 <p>Please view the example below and observe how the background properties affect the gradients.</p>
@@ -415,15 +417,15 @@ radial-gradient(shape at x y, color, color);
 
 <p>1. Apply a linear, radial or conic gradient to an HTML element.  Use at least 3 colors, and use percentages or pixels to change the position of the colors.</p>
 
-<p>2. Layer at least 2 gradients onto an HTML element.  Use either background-size, background-position or background-repeat to further change the gradient.</p>
+<p>2. Layer at least 2 gradients onto an HTML element.  Use either background-size, background-position or background-repeat to further customize the gradient.</p>
 
 
 
 <h3 id="css-animation">CSS Animation</h3>
 
-<p>CSS Animations are a great way to add pizazz to any site.  There are several animatable properties that you can find listed in the link below.  You can change the background, text color, border radius and more.  You can also move, rotate and change the shape of the element itself.</p>
+<p>CSS Animations are a great way to add pizazz to any site.  There are several animatable properties that you can find listed in the link below such as the background, text color, border radius and other properties of an HTML element.  You can also move, rotate and change the shape of the element itself.</p>
 
-<p>Please view the video below for a quick intro into CSS Animation</p>
+<p>Please view the video below for a quick intro into CSS Animation.</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HZHHBwzmJLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -514,15 +516,15 @@ radial-gradient(shape at x y, color, color);
 	<li><b>animation-timing-function:</b> Determines the speed curve the animation plays at.
 		<p>There are several of these properties:</p>
 		<ul>
-			<li>ease - (Default setting) Animation begins slowly, quickens, then ends slowly.</li>	
-			<li>linear - Same speed throughout.</li>	
+			<li>ease - (Default setting) Animation begins slowly, quickens, then ends slowly</li>	
+			<li>linear - Same speed throughout</li>	
 			<li>ease-in - Slow beginning</li>
 			<li>ease-out - Slow end</li>	
 			<li>ease-in-out - Slow beginning and end</li> 
-			<li>cubic-bezier(n,n,n,n) - Custom easing function, different numbers in each slot denote how fast or slow the animation will go at that point in the animation.</li>
+			<li>cubic-bezier(n,n,n,n) - Custom easing function, different numbers in each slot denote how fast or slow the animation will go at that point in the animation</li>
 		</ul>
 
-		<p>Other properties include <i>step-start</i>, <i>step-end</i>, and <i>steps(n,n)</i>, but we will not be using them in this course.</p>
+		<p>Other properties include <i>step-start</i>, <i>step-end</i>, and <i>steps(n,n)</i>, but we will not be covering them in this course.</p>
 		</li>
 		<li><b>animation-fill-mode:</b> Determines what the element will look like before and after the animation.</li>
 		<ul>
@@ -537,7 +539,7 @@ radial-gradient(shape at x y, color, color);
 
 <p><b>CSS Transform</b></p>
 
-<p>Transforming elements allows you to move, rotate, change size and the visual look of the element.  Here are the 5 different transform properties below.</p>
+<p>Transforming elements allows you to move, rotate, and change the size and visual look of an element.  Here are the 4 different transform properties below.</p>
 
 <ul>
 	<li>translate</li>
@@ -547,7 +549,7 @@ radial-gradient(shape at x y, color, color);
 </ul>
 
 
-<p><b>Note.</b> In all of the examples below, I will also be animating the background-color and border-radius of some of the elements so you can also be exposed to other animatable properties and how they work.</p>
+<p class = "note"><b>Note.</b> In all of the examples below, I will also be animating the background-color and border-radius of some of the elements so you can also be exposed to other animatable properties and how they work.</p>
 
 <p><b>Translate</b></p>
 
@@ -564,7 +566,7 @@ radial-gradient(shape at x y, color, color);
 </ul>
 
 <div>
-	<p><i>Note: TranslateZ moves the element forwards and backwards. However, to see this effect, the <i>perspective</i> property needs to be applied to the parent element of the element you're trying to animate.  This is because the <i>perspective</i> property creates a 3d space.</i></p>
+	<p class="note"><i>Note: TranslateZ moves the element forwards and backwards. However, to see this effect, the <i>perspective</i> property needs to be applied to the parent element of the element you're trying to animate.  This is because the <i>perspective</i> property creates a 3d space.</i></p>
 
 	<p>For example, lets say we set the perspective to 600px.  Since the untransformed HTML element starts at the center of the x,y,z axis, its coordinates are currently at 0.  That means, a perspective of 600px would set the user viewing the webpage 600px away from 0, or the HTML element.</p>
 
@@ -583,7 +585,7 @@ radial-gradient(shape at x y, color, color);
 
 <p><b>Rotate</b></p>
 
-<p>The rotate function can rotate the element along the x, y and z plane.  Please click "rerun" view the example below.</p>
+<p>The rotate function can rotate the element along the x, y and z plane.  You can use degrees to control the rotation.  Please click "rerun" view the example below.</p>
 
 <p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="ExPvraR" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ExPvraR">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/ExPvraR">
@@ -594,7 +596,11 @@ radial-gradient(shape at x y, color, color);
 
 <p><b>Scale</b></p>
 
-<p>Instead of decreasing the size of the shapes by percentages like we use in other functions, we use numbers.  If you were to scale an element using scale(1), the element would stay the same size.  If you wrote scale(2), the element would double in size by its width and height.  Similarly, if you used -1 or -2 to denote the size, the scale would be the same, but the element would reverse itself. The format for all 3 scale functions are below.</p>
+<p>Instead of decreasing the size of the shapes by percentages like we use in other functions, we use numbers.  If you were to scale an element using scale(1), the element would stay the same size.  If you wrote scale(2), the element would double in size by its width and height.  Similarly, if you used -1 or -2 to denote the size, the scale would be the same, but the element would reverse itself.</p>
+
+<p>If you would like to just scale the width of the element larger, you would use either <code>scaleX(2)</code> or scale(2,1). The same concept applies for changing the height.</p> 
+
+<p>The format for all 3 scale functions are below.</p>
 
 <code>scaleX(x)</code>
 <code>scaleY(y)</code>
@@ -611,7 +617,7 @@ radial-gradient(shape at x y, color, color);
 
 <p><b>Skew</b></p>
 
-<p>The skew function skews the html element by its x and y values. You can use the number measurements <i>deg, turn and, rad to manipulate the skew.  Please view an example of how to use skew below.</p>
+<p>The skew function skews the html element by its x and y values. You can use the number measurements <i>deg, turn and, rad to manipulate the skew.  Please view an example of how to use skew below, and how it makes the element appear.</p>
 
 <p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="mdVMvrd" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Skew">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/mdVMvrd">
@@ -636,7 +642,7 @@ radial-gradient(shape at x y, color, color);
 
 <p>1. Create a codepen where you animate a circle, you should use one of the 4 transform properties above to animate the circle.</p>
 
-<p>2. Create a codepen where you animate 2 squares, you should use one of the 4 transform properties above to animate the squares.  For the animation, make sure you use at least 2 transform properties in a line of code like so.</p>
+<p>2. Create a codepen where you animate 2 squares, you should use one of the 4 transform properties above to animate the squares.  For the animation, make sure you use at least 2 transform properties in a line of code like so.  Use an animation property to customize the animation settings, such as setting <code>animation-delay: 1s;</code>.</p>
 
 <code>
 
@@ -647,14 +653,15 @@ radial-gradient(shape at x y, color, color);
 }
 </code>
 
+<h3>Conclusion</h3>
 
-<p class = "prompt">TIP: Look at a course listing in the Summer School catalog to get a sense of what I'm expecting in this section.</p>
+<p>We covered a lot of material in a short amount of time.  While there is much more to learn about CSS Gradients and CSS Animation, I hope this course gave you enough information and practice to start creating your own gradients and animations.<p>
  
  
 
 <h1 id="discussion">Discussion</h1>
 
-<p><b class = "prompt">Open-ended Discussion</b></p>
+<p><b class = "prompt">Open-ended Discussion: Final Project Proposal</b></p>
 <p>You will participate in an open-ended discussion with your fellow students.  Think of what you would like to do for your final project.  What is your subject?  What will you be animating?  How can you apply gradients to make the subject more compelling?  Submit your project proposal and be as detailed as you can, state what you think your difficulties will be in creating this project. All students are required to provide feedback to at least 2 project proposals.</p>
 
 <p><b class = "prompt">A Graded Discussion</b></p>
@@ -670,7 +677,7 @@ radial-gradient(shape at x y, color, color);
 <p class = "prompt">At least 10 quiz questions, including at least one of each of the following question types.</p>
 <ul>
 	<li class = "prompt">Multiple choice answer</li>
-		<li>1. What CSS property do you use, to make a translateZ animation visible to the user?
+		<li>1. What CSS property do you use to make a translateZ animation visible to the user?
 			<ul>
 				<li>width</li>
 				<li>perspective</li>
@@ -741,9 +748,9 @@ radial-gradient(shape at x y, color, color);
 
 	<p><i>Hint. Create the gradient first, a good place to start is to figure out what type of gradient is being used in the screenshot.  Then, what do you need to do to make them the size they are?  What else do you need to do from there?  The colors being used are gold and yellow.</i></p>
 
-	<p><b>Answer:The background-position property controls the position of the background within the element. The background-size property controls the size of the background in the element. It is usually used to determine if the background should cover the entirety or only a portion of the whole area. The background-repeat property controls if the background repeats horizontally, vertically, both or not at all.  The properties used for this are epeat-x,repeat-y,repeat,no-repeat.</b></p>
+	<p><b>Answer:The background-position property controls the position of the background within the element. The background-size property controls the size of the background within the element. It is usually used to determine if the background should cover the entirety or only a portion of the whole area. The background-repeat property controls if the background repeats horizontally, vertically, both or not at all.  The properties used for this are repeat-x,repeat-y,repeat, and no-repeat.</b></p>
 
-	<p><b>To create this gradient, I first create a conic gradient using the colors yellow and gold.  Next, since there are only 2 of the gradients in a row, I set the background-size to 50% 50%.  Now, I want to move the gradient down vertically so only half of the gradient is available on the top and bottom.  To do this I set the background-position to 0px 50%;</b></p>
+	<p><b>To create this gradient, I first need to create a conic gradient using the colors yellow and gold.  Next, since there are only 2 of the gradients in a row, I set the background-size to 50% 50%.  Now, I want to move the gradient down vertically so only half of the gradient is available on the top and bottom.  To do this I set the background-position to 0px 50%;</b></p>
 
 	<p><p class="codepen" data-height="300" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="pogWyjP" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Longer Quiz Answer">
   <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/pogWyjP">
@@ -780,7 +787,7 @@ radial-gradient(shape at x y, color, color);
 
 <h3>CSS Gradient and Animation Final Project</h3>
 
-<p>Description: Make a webpage using gradients and animations.  It can be anything you want!  A car, animal, house, or a frog riding a bike!  It’s up to you, just make sure you include all of the required features below.</p>
+<p>Description: Make a webpage using gradients and animations.  It can be anything you want!  A box, ball, house, or scary ghost!  It’s up to you, just make sure you include all of the required features below.</p>
  
 <p>Use at least 5 gradients:</p>
 <ul>
@@ -802,6 +809,22 @@ radial-gradient(shape at x y, color, color);
     }
 }
 </pre></code>
+
+<p>These examples below are very advanced so don't feel like your project has to match the level of these, but just to give you an idea of what you can create.</p>
+
+<p class="codepen" data-height="423" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="aRdmzN" style="height: 423px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sleepy Cute Ghost - All CSS Animation">
+  <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/aRdmzN">
+  Sleepy Cute Ghost - All CSS Animation</a> by Gabriela Johnson (<a href="https://codepen.io/gabrielajohnson">@gabrielajohnson</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p class="codepen" data-height="528" data-theme-id="36571" data-default-tab="css,result" data-user="gabrielajohnson" data-slug-hash="QXQVVy" style="height: 528px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="The Ancient Room - CSS Only">
+  <span>See the Pen <a href="https://codepen.io/gabrielajohnson/pen/QXQVVy">
+  The Ancient Room - CSS Only</a> by Gabriela Johnson (<a href="https://codepen.io/gabrielajohnson">@gabrielajohnson</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 <h3>Grading Scheme</h3>
 

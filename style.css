@@ -34,6 +34,12 @@ th,td{
 	padding:5px;
 }
 
+.note{
+	background:rgba(216,255,202,0.5);
+	margin:10px 0px;
+	padding:5px;
+}
+
 .border{
 	border:1px solid black;
 	padding:5px;
