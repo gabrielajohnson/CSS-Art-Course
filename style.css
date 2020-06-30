@@ -84,8 +84,8 @@ th,td{
 }
 
 .sidebar li {
-    background: #90ee90;
-    box-shadow: inset 0px 0px 23px 7px #428e71;
+    background: #59af8e;
+    border-bottom: 0.5px solid #237949;
 }
 
 .sidebar li a{
