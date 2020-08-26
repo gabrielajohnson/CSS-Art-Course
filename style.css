@@ -112,3 +112,12 @@ th,td{
 	margin-left: 170px;
 	padding:10px;
 }
+
+
+#basic-course-info{
+	background: linear-gradient(#90ee90,#90eec9);
+	border-radius: 10px;
+	border:0;
+	padding:15px;
+}
+
